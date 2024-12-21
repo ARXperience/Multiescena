@@ -8,36 +8,38 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             background: linear-gradient(to bottom, #4e54c8, #8f94fb);
             font-family: Arial, sans-serif;
             color: white;
-            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
+
         h1 {
             font-size: 20px;
-            margin-bottom: 10px;
             text-align: center;
+            margin: 20px 0;
         }
+
         .image-container {
+            width: 100%; /* Ocupa todo el ancho de la pantalla */
             display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 80%; /* Ajusta la altura al 80% de la pantalla */
+            flex-direction: column; /* Las imágenes van una debajo de la otra */
+            align-items: center;
+            gap: 10px; /* Espaciado entre las imágenes */
         }
+
         .image-container a {
-            flex: 1 1 auto; /* Las imágenes ocupan el mismo espacio horizontalmente */
-            margin: 5px; /* Espaciado entre imágenes */
-            overflow: hidden;
-            border-radius: 5px;
+            width: 100%; /* Cada imagen ocupa todo el ancho */
+            max-width: 600px; /* Límite opcional para pantallas grandes */
         }
+
         .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ajusta la imagen para que cubra el espacio disponible */
+            width: 100%; /* La imagen se adapta al ancho del contenedor */
+            height: auto; /* Mantiene la proporción */
+            border-radius: 5px; /* Bordes redondeados */
         }
     </style>
 </head>
