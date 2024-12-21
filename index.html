@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Proyectos AR</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+        .button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un Proyecto AR</h1>
+    <div class="button-container">
+        <a href="https://arxperience.github.io/MATENA/" target="_blank" class="button">Proyecto 1: MATENA</a>
+        <a href="https://arxperience.github.io/AutoSky/" target="_blank" class="button">Proyecto 2: AutoSky</a>
+        <a href="https://arxperience.github.io/MINKA/" target="_blank" class="button">Proyecto 3: MINKA</a>
+    </div>
+</body>
+</html>
